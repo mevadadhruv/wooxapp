@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ExploreMore() {
   const styleObj = {
     fontSize: "25px",
   };
+
   return (
     <div className="explore-more">
       <div className="explore-nav">
