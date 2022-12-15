@@ -1,16 +1,12 @@
 import React from "react";
 
-function CenterText() {
+function CenterText({ dataTexts, dataTitle }) {
   return (
     <div className="center-text">
       <h1 className="text-h1">
-        <b>Visit One Of Our Countries Now</b>
+        <b>{dataTitle.data}</b>
       </h1>
-      <p className="text-p">
-        Built self-confidence to teach someone which helps me at clients
-        Negotiation do self-confidence <br /> Built to teach someone which help
-        at me clients help do
-      </p>
+      <p className="text-p">{dataTexts.data}</p>
     </div>
   );
 }

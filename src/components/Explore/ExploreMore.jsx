@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-function ExploreMore() {
+function ExploreMore({ data1, data2, data3 }) {
   const styleObj = {
     fontSize: "25px",
   };
-
   return (
     <div className="explore-more">
       <div className="explore-nav">
@@ -15,24 +14,22 @@ function ExploreMore() {
             style={styleObj}
           ></b>
         </div>
-        <div className="text1">Population</div>
-        <div className="text2">8.66M</div>
+        <div className="text1">{data1.title}</div>
+        <div className="text2">{data1.data}</div>
       </div>
       <div className="explore-nav1">
         <div className="world-img">
           <b className="glyphicon glyphicon-globe" id="world"></b>
         </div>
-        <div className="text3">Terrlitory</div>
-        <div className="text4">
-          41.290km<i>2</i>
-        </div>
+        <div className="text3">{data2.title}</div>
+        <div className="text4">{data2.data}</div>
       </div>
       <div className="explore-nav2">
         <div className="home-img">
           <b id="home" className="glyphicon glyphicon-home"></b>
         </div>
-        <div className="text5">AVG Price</div>
-        <div className="text6">$1,100,200</div>
+        <div className="text5"> {data3.title}</div>
+        <div className="text6">{data3.data}</div>
       </div>
       <div className="explore-button">
         <button className="b2">Explore More</button>

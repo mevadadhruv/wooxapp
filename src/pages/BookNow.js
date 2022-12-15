@@ -1,13 +1,13 @@
 import React from "react";
 
-function BookNow() {
+function BookNow({ dataText }) {
   return (
     <div className="book-now">
       <div className="book-image">
         <div className="book-text">
           <h1>
-            ARE YOU LOOKING TO TRAVEL?
-            <h3>Make A Reservation By Clicking The Button</h3>
+            {dataText.text1}
+            <h3>{dataText.text2}</h3>
           </h1>
         </div>
         <div className="book-button">

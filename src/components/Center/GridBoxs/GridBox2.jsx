@@ -1,6 +1,6 @@
 import React from "react";
 
-function GridBox2({ item }) {
+function GridBox2({ item, gridTexts, dataDirection }) {
   return (
     <div className="grid-box2">
       <div className="grid-image">
@@ -18,13 +18,7 @@ function GridBox2({ item }) {
       </div>
 
       <div className="grid-text">
-        <p>
-          Built self-confidence to teach someone which helps me at clients
-          Negotiation Built your
-        </p>
-        <p>
-          teach someone which help at me clients help do at clients Negotiation.
-        </p>
+        <p>{gridTexts.data}</p>
       </div>
       <div className="grid-icon">
         <b
@@ -56,7 +50,7 @@ function GridBox2({ item }) {
       </div>
 
       <div className="grid-direction">
-        <b> Need Directions ? ➜</b>
+        <b> {dataDirection.data}</b>
       </div>
 
       <div className="grid-button">

@@ -1,13 +1,9 @@
 import React from "react";
 
-function Footer() {
+function Footer({ footerTextData }) {
   return (
     <div className="footer">
-      <p className="footer1">
-        Copyright @ 2036 WoOx Travel Company. All rights Reserved.
-        <br />
-        Design : TemplateMo
-      </p>
+      <p className="footer1">{footerTextData.text}</p>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-function ExploreLine() {
+function ExploreLine({ item }) {
   return (
     <div className="explore-line">
       <div className="line">
@@ -18,10 +18,9 @@ function ExploreLine() {
         </b>
       </div>
       <div className="explore-text">
-        <b className="number">1</b>
-        <b className="number">2</b>
-        <b className="number">3</b>
-        <b className="number">4</b>
+        {item.map((d) => (
+          <b className="number">{d.data}</b>
+        ))}
       </div>
     </div>
   );
