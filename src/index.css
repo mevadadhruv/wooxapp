@@ -1,13 +1,689 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+/* body{
+  background-color: #2596be;
+} */
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: red;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav {
+  height: 10%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: rgb(69, 178, 193);
+}
+
+.logo {
+  height: inherit;
+  position: inherit;
+}
+
+.nav-logo {
+  height: 75px;
+  position: inherit;
+  margin-left: 10%;
+  width: 14%;
+}
+
+.nav-menu {
+  margin-top: 0.6%;
+  /*relative we need to centralize by this*/
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 25%;
+  color: white;
+  width: 50%;
+}
+
+h2 {
+  float: left;
+  margin-left: 9%;
+  color: white;
+}
+
+.h4:hover {
+  text-decoration: overline solid;
+  color: white;
+  /* border-top-style: solid;
+    border-bottom-width: 1px; */
+}
+
+.explore {
+  background-image: url(components/Photos/forest.jpg);
+
+  background-size: cover;
+  position: inherit;
+  width: 100%;
+  font-size: large;
+  height: 90%;
+  color: white;
+}
+
+.text {
+  width: fit-content;
+  height: fit-content;
+  margin: 10%;
+  margin-left: 39%;
+  text-align: center;
+}
+
+p {
+  height: auto;
+  width: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* background-color: chartreuse; */
+}
+
+.b1 {
+  transition: all 0.5s ease;
+  width: 40%;
+  color: #2596be;
+  border: 1px solid #2596be;
+  font-family: "Montserrat", sans-serif;
+  /* text-transform: uppercase; */
+  text-align: center;
+  line-height: 2;
+  font-size: 15px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 44px;
+}
+
+.b1:hover {
+  color: #001f3f;
+  background-color: #fff;
+}
+
+.explore-more {
+  height: 15%;
+  width: 80%;
+  outline: none;
+  color: #2596be;
+  font-size: large;
+  line-height: 1;
+  border-radius: 90px;
+  background-color: white;
+  border: 2px solid transparent;
+  margin-left: 10%;
+}
+
+.explore-nav {
+  height: 65%;
+  position: inherit;
+  width: 16%;
+  margin: 1.4%;
+  margin-left: 4.5%;
+  display: flex;
+  /* background-color: #001f3f; */
+  color: #2596be;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.person-img {
+  position: inherit;
+  height: 100%;
+  background-color: transparent;
+  width: 35%;
+  border: 2px solid #2596be;
+  border-radius: 50%;
+  /* color: #2596be; */
+  /* bottom: 5%; */
+  /* background-color: gold; */
+}
+
+#person {
+  position: inherit;
+  height: 35%;
+  color: #2596be;
+  width: 30%;
+  margin: 31.5%;
+  margin-top: 25%;
+}
+
+.text1 {
+  height: fit-content;
+  width: fit-content;
+  float: left;
+  margin-left: 85px;
+  top: 74%;
+  position: absolute;
+  /* background-color: blue; */
+  opacity: 0.5;
+}
+
+.text2 {
+  /* background-color: blue; */
+  height: fit-content;
+  position: absolute;
+  float: left;
+  width: fit-content;
+  top: 78%;
+  margin-left: 88px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.explore-nav1 {
+  /* position: inherit; */
+  height: 65%;
+  position: relative;
+  width: 16%;
+  margin: 2%;
+  margin-left: 30%;
+  /* background-color: #001f3f; */
+  bottom: 89%;
+  display: flex;
+}
+
+.world-img {
+  position: inherit;
+  height: 100%;
+  width: 35%;
+  border: 2px solid #2596be;
+  border-radius: 50%;
+  /* bottom: 5%; */
+  /* background-color: gold; */
+}
+
+#world {
+  position: inherit;
+  height: 30%;
+  font-size: 25px;
+  color: #2596be;
+  width: 30%;
+  margin: 25%;
+  margin-top: 23%;
+  font-size: 30px;
+}
+
+.text3 {
+  height: fit-content;
+  width: fit-content;
+  float: left;
+  margin-left: 85px;
+  top: 15%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.text4 {
+  height: fit-content;
+  position: absolute;
+  float: left;
+  width: fit-content;
+  top: 55.5%;
+  margin-left: 88px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.explore-nav2 {
+  height: 65%;
+  position: relative;
+  width: 16%;
+  /* background-color: #001f3f; */
+  margin: 2%;
+  margin-left: 55%;
+  bottom: 179%;
+  display: flex;
+}
+
+.home-img {
+  position: inherit;
+  height: 100%;
+  width: 35%;
+  border: 2px solid #2596be;
+  border-radius: 50%;
+  /* bottom: 5%; */
+  /* background-color: gold; */
+}
+
+#home {
+  position: inherit;
+  height: 30%;
+  font-size: 25px;
+  color: #2596be;
+  width: 30%;
+  margin: 27%;
+  margin-top: 25%;
+}
+
+.text5 {
+  height: fit-content;
+  width: fit-content;
+  float: left;
+  margin-left: 85px;
+  top: 15%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.text6 {
+  height: fit-content;
+  position: absolute;
+  float: left;
+  width: fit-content;
+  /* background-attachment: fixed; */
+  top: 55%;
+  margin-left: 88px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.explore-button {
+  height: 50%;
+  position: relative;
+  width: 13%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 83%;
+  bottom: 260%;
+  display: flex;
+  /* background-color: #001f3f; */
+}
+
+.b2 {
+  height: fit-content;
+  position: absolute;
+  width: 100%;
+  transition: all 0.5s ease;
+  color: #fff;
+  border: 1px solid white;
+  font-family: "Montserrat", sans-serif;
+  /* text-transform: uppercase; */
+  text-align: center;
+  line-height: 2;
+  font-size: 15px;
+  background-color: #2596be;
+  padding: 10px;
+  outline: none;
+  border-radius: 44px;
+}
+
+.b2:hover {
+  color: #2596be;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.person-img:hover {
+  border: 2px solid #2596be;
+  background-color: skyblue;
+}
+
+.world-img:hover {
+  border: 2px solid #2596be;
+  background-color: skyblue;
+}
+
+.home-img:hover {
+  border: 2px solid #2596be;
+  background-color: skyblue;
+}
+.explore-line {
+  width: 69.9%;
+  height: 2%;
+  /* background-color: tomato; */
+  text-align: center;
+  margin: 2.5% 17%;
+}
+
+.b {
+  /* margin: 2%; */
+  width: 100%;
+  margin-right: 3%;
+  text-decoration: line-through;
+  color: white;
+  /* background-color: black; */
+}
+
+.explore-text {
+  /* background-color: red; */
+  width: 95%;
+  margin-left: 5%;
+  float: left;
+}
+
+.number {
+  float: left;
+  width: max-content;
+  margin-left: 10%;
+  margin-right: 12.5%;
+  /* background-color: skyblue; */
+}
+
+.center {
+  /* top: 100%; */
+  margin-top: 4%;
+  position: static;
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  margin-top: 44.6%;
+}
+
+.center-text {
+  margin-top: 5%;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  /* background-color: green; */
+}
+
+.text-h1 {
+  position: absolute;
+  /* background-color: aqua; */
+  margin-top: 0;
+  left: 5%;
+  font-size: 35px;
+}
+
+.text-p {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  opacity: 0.7;
+  font-size: small;
+  /* background-color: deeppink; */
+}
+
+.center-grid {
+  position: absolute;
+  margin-top: 17%;
+  margin-left: 5%;
+  width: 60%;
+  height: 145%;
+  /* background-color: gold; */
+}
+
+.grid-scroll {
+  width: 30%;
+  height: 4.5%;
+  position: absolute;
+  bottom: 0px;
+  left: 38%;
+  /* right: 50%; */
+  color: #2596be;
+  /* background-color: #4b6c8d; */
+  font-size: xx-large;
+}
+
+.scroll-1 {
+  position: absolute;
+  height: 100%;
+  /* background-color: transparent; */
+  width: 20%;
+  border-radius: 30px;
+  /* background-color: gold; */
+  top: 0;
+  bottom: 0;
+  left: 16%;
+  text-align: center;
+  font-size: 29px;
+  transition: all 0.5s ease;
+  color: #2596be;
+  background-color: white;
+  outline: none;
+  border: 1px solid #2596be;
+}
+
+.scroll-1:hover {
+  color: white;
+  background-color: #2596be;
+  border: 2px solid #2596be;
+}
+
+.scroll-2:hover {
+  color: white;
+  background-color: #2596be;
+  border: 2px solid #2596be;
+}
+
+.scroll-3:hover {
+  color: white;
+  background-color: #2596be;
+  border: 2px solid #2596be;
+}
+
+.scroll-2 {
+  position: absolute;
+  height: 100%;
+  /* background-color: transparent; */
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 35px;
+  background-color: gold;
+  text-align: center;
+  top: 0;
+  left: 40%;
+  font-size: 29px;
+  transition: all 0.5s ease;
+  color: #2596be;
+  background-color: white;
+  outline: none;
+  border: 1px solid #2596be;
+}
+
+.scroll-3 {
+  position: absolute;
+  height: 100%;
+  /* background-color: transparent; */
+  left: 64%;
+  text-align: center;
+  width: 20%;
+  border: 2px solid black;
+  border-radius: 35px;
+  background-color: gold;
+  top: 0;
+  font-size: 29px;
+  transition: all 0.5s ease;
+  color: #2596be;
+  background-color: white;
+  outline: none;
+  border: 1px solid #2596be;
+}
+
+.grid-box1 {
+  width: 100%;
+  height: 29%;
+  position: absolute;
+  /* background-color: aqua; */
+}
+
+.grid-box2 {
+  width: 100%;
+  height: 29%;
+  position: absolute;
+  top: 32%;
+  /* background-color: forestgreen; */
+}
+
+.grid-box3 {
+  width: 100%;
+  height: 29%;
+  position: absolute;
+  top: 64%;
+  /* background-color: gray; */
+}
+
+.grid-image {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  /* background-color: brown; */
+}
+
+.grid-button {
+  width: 18%;
+  height: 18%;
+  right: 0;
+  position: absolute;
+  /* background-color: black; */
+}
+
+.center-map {
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  top: 133.5%;
+  left: 70%;
+
+  border-radius: 20px;
+}
+
+.grid-country {
+  width: 21%;
+  height: 30%;
+  position: absolute;
+  left: 38%;
+  /* background-color: crimson; */
+}
+
+.country-name {
+  position: absolute;
+  font-size: 25px;
+  top: 0;
+}
+
+.country-text {
+  position: absolute;
+  font-size: large;
+  opacity: 0.5;
+  top: 40%;
+}
+
+.grid-text {
+  width: 62%;
+  position: absolute;
+  height: 20%;
+  right: 0;
+  top: 30%;
+  opacity: 0.5;
+  /* background-color: darkgreen; */
+  font-size: 15px;
+}
+
+.grid-icon {
+  width: 62%;
+  position: absolute;
+  height: 7.5%;
+  opacity: 0.5;
+  right: 0;
+  top: 60%;
+  font-size: 15px;
+}
+
+.grid-direction {
+  width: 20%;
+  position: absolute;
+  font-size: 15px;
+
+  height: 10%;
+  left: 38%;
+  /* right: 0; */
+  top: 80%;
+  opacity: 0.6;
+}
+
+.footer {
+  width: max-content;
+  position: sticky;
+  color: white;
+  /* margin-top: 10%; */
+  width: 100%;
+  opacity: 0.7;
+  height: 15%;
+  text-align: center;
+  background-color: #2596be;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer1 {
+  font-size: medium;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.b3 {
+  height: fit-content;
+  position: relative;
+  width: 100%;
+  transition: all 0.5s ease;
+  color: #fff;
+  background-color: #2596be;
+  outline: none;
+  border: 1px solid white;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.b3:hover {
+  color: #2596be;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.book-now {
+  background-image: url(components/Photos/man1.jpg);
+  opacity: 0.7;
+  background-color: #2596be;
+  background-size: cover;
+  background-position: 85%;
+  /* background-color: #001f3f; */
+  height: 35%;
+  width: 100%;
+  position: sticky;
+  margin-top: 50%;
+}
+
+.book-image {
+  background-color: #2596be;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+}
+
+.book-text {
+  color: white;
+  /* background-color: aqua; */
+  font-weight: bold;
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 7%;
+  margin-left: 6%;
+  /* margin-bottom: auto; */
+  /* margin-bottom: ; */
+}
+
+.book-button {
+  height: 100%;
+  width: 10%;
+  /* background-color: black; */
+  padding-top: 7.5%;
+  margin-bottom: auto;
+  margin-left: 84%;
+}
+
+h3 {
+  margin-top: auto;
+  font-size: large;
 }
